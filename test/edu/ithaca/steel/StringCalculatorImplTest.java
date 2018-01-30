@@ -29,6 +29,8 @@ class StringCalculatorImplTest {
         assertEquals(10,calculator.add("1,2,3,4"));
         assertEquals(-15,calculator.add("7,10,-20,1,-3,-19,9"));
 
+        // tests for handling new lines as interchangeable with commas
+        assertEquals(19,calculator.add("7,4\n10,-1\n-1"));
 
     }
 }
