@@ -25,5 +25,10 @@ class StringCalculatorImplTest {
         assertEquals(-10,calculator.add("-6,-4"));
         assertEquals(13,calculator.add("-20,33"));
 
+        // tests for unknown amount of numbers
+        assertEquals(10,calculator.add("1,2,3,4"));
+        assertEquals(-15,calculator.add("7,10,-20,1,-3,-19,9"));
+
+
     }
 }
