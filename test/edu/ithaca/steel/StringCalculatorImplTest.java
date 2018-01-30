@@ -15,11 +15,10 @@ class StringCalculatorImplTest {
 
         // tests for single number strings;
         assertEquals(7,calculator.add("7"));
-        assertEquals(3.14,calculator.add("3.14"));
+        assertEquals(0,calculator.add("3.14"));
         assertEquals(0,calculator.add("0"));
         assertEquals(-23,calculator.add("-23"));
         assertEquals(0,calculator.add("b"));
-
 
     }
 }
