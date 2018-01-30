@@ -5,7 +5,7 @@ public class StringCalculatorImpl implements StringCalculator{
     public int add(String numbers) {
         if(numbers.isEmpty())return 0;
         // split the string into array
-        String[] numList = numbers.split("\\s*,\\s*");
+        String[] numList = numbers.split("\\s*,\\s*|\\s*\n\\s*");
         int sum = 0;
         for(int j = 0; j < numList.length; j++) {
             // splits string into char array and iteratively checks for non-integers
